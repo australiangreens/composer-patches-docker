@@ -1,4 +1,4 @@
-FROM composer:1.6
+FROM composer:1.9
 RUN apk --no-cache add patch freetype-dev libjpeg-turbo-dev libpng-dev && docker-php-ext-configure gd \
   --with-freetype-dir=/usr \
   --with-png-dir=/usr \
